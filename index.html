@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ACADEMIA GIT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#professores" class="brand">
+        <img src="gym-logo2.png" alt="Logo da ACADEMIA GIT" class="logo">
+        <span>ACADEMIA GIT</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <nav class="main-nav">
+        <ul class="nav-list" id="nav-list">
+          <li><a href="#professores">Professores</a></li>
+          <li><a href="#nutricionista">Nutricionista</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="professores" class="container professores-section">
+      <header class="prof-header">
+        <div>
+          <h2>Nossos Professores</h2>
+          <p>Lista de profissionais com fotos, avaliações, preços e áreas de atuação para acompanhar seus treinos.</p>
+        </div>
+        <div class="prof-filter">
+          <label for="tipo-prof">Filtrar por área:</label>
+          <select id="tipo-prof">
+            <option value="todos">Todos</option>
+            <option value="personal">Personal Trainer</option>
+            <option value="fisioterapeuta">Fisioterapeuta</option>
+          </select>
+        </div>
+      </header>
+
+      <div class="prof-grid">
+        <article class="prof-card" data-tipo="personal">
+          <div class="prof-topo">
+            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=600&auto=format&fit=crop" alt="Personal trainer atendendo aluno" class="prof-foto">
+            <div>
+              <h3>João Victor</h3>
+              <p class="prof-area">Personal Trainer • Hipertrofia e Emagrecimento</p>
+              <p class="prof-avaliacao">★★★★★ 4.9 (132 avaliações)</p>
+            </div>
+          </div>
+          <p class="prof-preco">Planos a partir de R$ 149,90/mês</p>
+          <ul class="prof-lista">
+            <li>Planilhas personalizadas de treino.</li>
+            <li>Acompanhamento mensal com ajustes.</li>
+            <li>Consultoria por chat direto.</li>
+          </ul>
+          <div class="prof-acoes">
+            <button class="btn primario">Agendar sessão</button>
+            <button class="btn secundario">Ver planilha personalizada</button>
+          </div>
+        </article>
+
+        <article class="prof-card" data-tipo="personal">
+          <div class="prof-topo">
+            <img src="img/marcos.jpg" alt="Treinador Marcos auxiliando aluna" class="prof-foto">
+            <div>
+              <h3>Marcos Lima</h3>
+              <p class="prof-area">Personal Trainer • Funcional e Mobilidade</p>
+              <p class="prof-avaliacao">★★★★☆ 4.7 (64 avaliações)</p>
+            </div>
+          </div>
+          <p class="prof-preco">Planos a partir de R$ 129,90/mês</p>
+          <ul class="prof-lista">
+            <li>Planilhas de treino funcional.</li>
+            <li>Foco em mobilidade e prevenção de dores.</li>
+            <li>Acompanhamento mensal com revisão de treinos.</li>
+          </ul>
+          <div class="prof-acoes">
+            <button class="btn primario">Agendar sessão</button>
+            <button class="btn secundario">Planilha funcional</button>
+          </div>
+        </article>
+
+        <article class="prof-card" data-tipo="fisioterapeuta">
+          <div class="prof-topo">
+            <img src="img/laura.jpg" alt="Profissional de fisioterapia esportiva" class="prof-foto">
+            <div>
+              <h3>Laura Mendes</h3>
+              <p class="prof-area">Fisioterapia Esportiva</p>
+              <p class="prof-avaliacao">★★★★★ 4.9 (53 avaliações)</p>
+            </div>
+          </div>
+          <p class="prof-preco">Planos a partir de R$ 199,90/mês</p>
+          <ul class="prof-lista">
+            <li>Planilhas de reabilitação e retorno ao treino.</li>
+            <li>Acompanhamento em casos de lesão.</li>
+            <li>Orientações de exercícios corretivos.</li>
+          </ul>
+          <div class="prof-acoes">
+            <button class="btn primario">Agendar avaliação</button>
+            <button class="btn secundario">Ver plano de reabilitação</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="nutricionista" class="container nutri-section">
+      <header class="section-head">
+        <div>
+          <h2>Nutricionista</h2>
+          <p>Área voltada para dietas, avaliação corporal, receitas saudáveis e histórico alimentar.</p>
+        </div>
+      </header>
+
+      <div class="nutri-grid">
+        <article class="nutri-card">
+          <h3>Dietas completas</h3>
+          <p>Montagem de dietas personalizadas para o seu objetivo, como emagrecimento, hipertrofia ou manutenção.</p>
+        </article>
+        <article class="nutri-card">
+          <h3>Chat</h3>
+          <p>Canal direto para tirar dúvidas rápidas com o nutricionista sobre sua alimentação.</p>
+        </article>
+        <article class="nutri-card">
+          <h3>Avaliação corporal</h3>
+          <p>Análise de peso, medidas e composição corporal para acompanhar a evolução.</p>
+        </article>
+        <article class="nutri-card">
+          <h3>Receitas saudáveis</h3>
+          <p>Sugestões de refeições práticas, equilibradas e fáceis de preparar no dia a dia.</p>
+        </article>
+        <article class="nutri-card">
+          <h3>Histórico alimentar</h3>
+          <p>Registro de ajustes de dieta e resultados ao longo do tempo para controle e comparação.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="academias" class="container academias-section">
+  <header class="section-head">
+    <div>
+      <h2>Academia GIT – Unidade Oficial</h2>
+      <p>Localização oficial da Academia GIT em Palmas - TO.</p>
+    </div>
+  </header>
+
+  <div class="academias-layout">
+    <div class="academias-lista" id="lista-acad">
+
+      <article class="academia-card">
+        <h3>Academia GIT – Unidade Oficial</h3>
+        <p><strong>Endereço:</strong> Quadra AE 310 Sul, Av. NS 10, S/N – Plano Diretor Sul</p>
+        <p><strong>Cidade:</strong> Palmas — TO</p>
+        <p><strong>CEP:</strong> 77021-090</p>
+        <p><strong>Avaliação:</strong> 4.9 ★</p>
+        <p><strong>Planos:</strong> A partir de R$ 99,90/mês</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <h3>Sobre nós</h3>
+        <p>Academia fitness focada em saúde, desempenho e bem-estar.</p>
+      </div>
+      <div>
+        <h3>Formas de contato</h3>
+        <p>WhatsApp • E-mail</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
